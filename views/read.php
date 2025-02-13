@@ -5,7 +5,7 @@ require_once"../config/db_connect.php";
 
 try{
     //Preparamos la consulta pidiéndo que selecciones todos los campos de la tabla tasks ordenadas por id de manera descendiente
-    $stmt = $pdo->prepare("SELECT * FROM tasks ORDER BY id DESC");
+    $stmt = $pdo->prepare("SELECT * FROM tasks ORDER BY id ASC");
 
     //Ejecutamos la consulta
     $stmt->execute();
@@ -41,13 +41,13 @@ try{
         <?php foreach ($tareas as $tarea): ?>
         <tr>
             <td><?= htmlspecialchars($tarea['id']) ?></td>
-            <td><?= htmlspecialchars($tarea['descripcion']) ?></td>
+            <td><?= htmlspecialchars($tarea['task']) ?></td>
             <td>
                 <?= $tarea['status'] ? 'Completado' : 'Pendiente' ?>
             </td>
         </tr>
         <?php endforeach; ?>
     </table>
-
+    <p><a href="create.php">Crear una tarea</a></p>
 </body>
 </html>
