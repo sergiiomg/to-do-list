@@ -47,6 +47,9 @@ try{
             <td>
             <a href="actions/delete.php?id=<?= $tarea['id']; ?>">Eliminar tarea</a>
             </td>
+            <td>
+            <a href="views/edit.php?id=<?= $tarea['id']; ?>">Editar</a>
+            </td>
         </tr>
         <?php endforeach; ?>
     </table>
