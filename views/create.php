@@ -18,7 +18,7 @@
     </form>
 
     <br>
-    <a href="read.php">Volver a la Lista</a>
+    <a href="../index.php">Volver a la Lista</a>
 
 </body>
 </html>
