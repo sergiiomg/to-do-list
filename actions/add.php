@@ -14,8 +14,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $stmt->bindParam(":task", $task);
             $stmt->execute();
 
-            //Redirigimos al usuario a read.php para que vea la lista de tareas.
-            header("Location: ../views/read.php");
+            //Redirigimos al usuario a index.php para que vea la lista de tareas.
+            header("Location: ../index.php");
             exit();
 
         } catch(PDOException $e){
@@ -27,6 +27,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 
 } else{
-    header("Location: ../views/read.php");
+    header("Location: ../index.php");
     exit();
 }
