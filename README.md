@@ -14,4 +14,4 @@ Este es un proyecto simple de una To-Do List desarrollado con PHP, MySQL y PDO. 
 - Ver todas las tareas en la página principal.
 
 ## Mejoras futuras
--Aplicar estilos con CSS
+- Aplicar estilos con CSS
