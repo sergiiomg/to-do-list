@@ -15,3 +15,4 @@ Este es un proyecto simple de una To-Do List desarrollado con PHP, MySQL y PDO. 
 
 ## Mejoras futuras
 - Aplicar estilos con CSS
+- Paginación
