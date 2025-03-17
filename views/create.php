@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Añadir Nueva Tarea</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/create.css">
 </head>
 <body>
+    <div id="container">
+        <h1>Añadir Nueva Tarea</h1>
 
-    <h2>Añadir Nueva Tarea</h2>
+        <form action="../actions/add.php" method="POST">
+            <label for="task">Descripción:</label>
+            <input type="text" name="task" required>
+            
+            <button type="submit">Agregar Tarea</button>
+        </form>
 
-    <form action="../actions/add.php" method="POST">
-        <label for="task">Descripción:</label>
-        <input type="text" name="task" required>
-        
-        <button type="submit">Agregar Tarea</button>
-    </form>
-
-    <br>
-    <a href="../index.php">Volver a la Lista</a>
-
+        <br>
+        <a href="../index.php">Volver a la Lista</a>
+    </div>
 </body>
 </html>
