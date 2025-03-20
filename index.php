@@ -50,52 +50,49 @@ try{
     <title>Lista de Tareas</title>
 </head>
 <body>
-<div id="container">
-    <div id="container2">
-        <div id="container3">
-            <div id="container4">
-                <h1>Lista de Tareas</h1>
-                <table border="0" id="tabla">
-                    <tr>
-                        <th>Descripción</th>
-                        <th>Estado</th>
-                    </tr>
-
-                    <?php foreach ($tareas as $tarea): ?>
-                    <tr>
-                        <td><?= htmlspecialchars($tarea['task']) ?></td>
-                        <td>
-                            <?= $tarea['status'] ? 'Completado' : 'Pendiente' ?>
-                        </td>
-                        <td>
-                            <button><a href="actions/delete.php?id=<?= $tarea['id']; ?>">Eliminar</a></button>
-                        </td>
-                        <td>
-                            <button><a href="views/edit.php?id=<?= $tarea['id']; ?>">Editar</a></button>
-                        </td>
-                    </tr>
-                    <?php endforeach; ?>
-                </table>
-
-                <div id="paginacion">
-                    <?php if ($pagina_actual > 1): ?>
-                        <a href="?page=<?= $pagina_actual - 1 ?>">Anterior</a>
-                    <?php endif; ?>
-
-                    <?php for ($i = 1; $i <= $total_paginas; $i++): ?>
-                        <a href="?page=<?= $i ?>" class="<?= ($i == $pagina_actual) ? 'active' : '' ?>"><?= $i ?></a>
-                    <?php endfor; ?>
-
-                    <?php if ($pagina_actual < $total_paginas): ?>
-                        <a href="?page=<?= $pagina_actual + 1 ?>">Siguiente</a>
-                    <?php endif; ?>
-                </div>
-            
+    <div id="container">
+        <div class="titulo">
+            <h1>Lista de Tareas</h1>
+        </div>
+        <div class="tareas">
+            <table border="0" id="tabla">
+                <?php foreach ($tareas as $tarea): ?>
+                        <tr>
+                            <td><?= htmlspecialchars($tarea['task']) ?></td>
+                            <td>
+                                <?= $tarea['status'] ? 'Completado' : 'Pendiente' ?>
+                            </td>
+                            <td>
+                                <button id="eliminar"><a href="actions/delete.php?id=<?= $tarea['id']; ?>">Eliminar</a></button>
+                            </td>
+                            <td>
+                                <button id="editar"><a href="views/edit.php?id=<?= $tarea['id']; ?>">Editar</a></button>
+                            </td>
+                        </tr>
+                <?php endforeach; ?>
+            </table>
+        </div>
+        
+        <div class="interaccion">
+            <div class="boton">
                 <button><a href="views/create.php">Crear una tarea</a></button>
             </div>
+            <div id="paginacion">
+                <?php if ($pagina_actual > 1): ?>
+                    <a href="?page=<?= $pagina_actual - 1 ?>">Anterior</a>
+            <?php endif; ?>
+
+                <?php for ($i = 1; $i <= $total_paginas; $i++): ?>
+                    <a href="?page=<?= $i ?>" class="<?= ($i == $pagina_actual) ? 'active' : '' ?>"><?= $i ?></a>
+                <?php endfor; ?>
+
+                <?php if ($pagina_actual < $total_paginas): ?>
+                    <a href="?page=<?= $pagina_actual + 1 ?>">Siguiente</a>
+                <?php endif; ?>
+            </div>
         </div>
+        
     </div>
-</div>
     
 </body>
 </html>

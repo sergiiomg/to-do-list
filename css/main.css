@@ -1,0 +1,134 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c2f38;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #3a3f47;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del título */
+.titulo h1 {
+    text-align: center;
+    color: #e0e0e0;
+}
+
+/* Estilo para la tabla de tareas */
+.tareas table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tareas td {
+    padding: 12px;
+    border-bottom: 1px solid #555;
+    text-align: left;
+}
+
+.tareas td a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #343a40;
+    color: #f4f4f4;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+button a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #495057;
+}
+
+#eliminar:hover{
+    background-color: rgb(252, 73, 73);
+}
+
+/* Estilo para la paginación */
+#paginacion {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#paginacion a {
+    padding: 8px 16px;
+    margin: 0 5px;
+    text-decoration: none;
+    background-color: #555;
+    color: #f4f4f4;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+#paginacion a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+#paginacion .active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Estilo de los botones de interacción */
+.interaccion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.boton button {
+    background-color: #28a745;
+    color: white;
+    transition: all 0.3s;
+}
+
+.boton button:hover {
+    background-color: #218838;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .interaccion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
