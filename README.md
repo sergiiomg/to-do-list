@@ -12,7 +12,4 @@ Este es un proyecto simple de una To-Do List desarrollado con PHP, MySQL y PDO. 
 - Editar la descripción y el estado de una tarea.
 - Eliminar tareas.
 - Ver todas las tareas en la página principal.
-
-## Mejoras futuras
-- Aplicar estilos con CSS
 - Paginación
