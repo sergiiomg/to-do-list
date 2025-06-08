@@ -1,5 +1,5 @@
 # To-Do List con PHP y MySQL
-Este es un proyecto simple de una To-Do List desarrollado con PHP, MySQL y PDO. Permite a los usuarios agregar, ver, actualizar y eliminar tareas (CRUD). Es un buen ejercicio para aprender sobre la manipulación de bases de datos con PHP.
+Este es un proyecto simple de una To-Do List desarrollado con PHP, MySQL y PDO. Permite a los usuarios agregar, ver, actualizar y eliminar tareas (CRUD).
 
 ## Tecnologías Utilizadas
 - PHP (Para la lógica del backend)
