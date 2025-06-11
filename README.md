@@ -1,7 +1,7 @@
 # 📝 To-Do List con PHP y MySQL
 Una aplicación web sencilla para gestionar tareas, desarrollada con PHP, MySQL y PDO. Permite a los usuarios agregar, ver, actualizar y eliminar tareas (CRUD).
 
-## Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 - 🐘 PHP (Para la lógica del backend)
 - 🗄️ MySQL (Para almacenar las tareas en la base de datos)
 - 🔐 PDO (Para la conexión segura con la base de datos)
